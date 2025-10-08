@@ -1,0 +1,44 @@
+.main-box {
+  width: 250px;
+  height: 250px;
+  border: 5px solid black;       /* thick border around all boxes */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 30px auto;
+  padding: 10px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+/* Each individual color box */
+.color-box {
+  background-color: #ff0;      
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;               
+  transition: transform 0.2s ease;
+}
+
+.color-box:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive design for small screens */
+@media screen and (max-width: 500px) {
+  .color-box {
+    width: 30px;
+    height: 30px;
+    font-size: 0.5em;
+  }
+
+  .main-box {
+    flex-direction: column;
+    width: auto;
+    height: auto;
+  }
+}
