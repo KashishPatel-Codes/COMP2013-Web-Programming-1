@@ -4,7 +4,7 @@ export default function ColorBox({ colors, initialColor }) {
   const [color, setColor] = useState(initialColor);
 
   function changeColor() {
-    const randomIndex = Math.floor(Math.random() * colors.length);
+    const randomIndex = Math.floor(Math.random() * colors.length); //to get random color on click
     setColor(colors[randomIndex]);
   }
 
